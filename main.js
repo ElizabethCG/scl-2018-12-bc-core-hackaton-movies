@@ -19,71 +19,11 @@
 
 
 
-
-
-
-// for (let i=0; i<=1;i++){
-//   if (i=0){
-//     llamada2=6513120;
-//   }else{llamada2=4701660}
-// console.log(callingFetch(llamada2))
-//
-// }
-
-
-// const callingFetch = (llamada1,llamada2,llamada3) => {
-// let request = new Request("http://www.omdbapi.com/?i=tt6513120&apikey=eb4fa0ba&plot=full", {
-// let request = new Request("http://www.omdbapi.com/?i=tt6513120&apikey=eb4fa0ba&plot=full", {
-    //     method: 'GET',
-    //     mode: 'cors',
-    //     credentials: 'omit',
-    //     // cache: 'only-if-cached',    VER PARA QUE SE USA ESTA LINEA. LA COMENTÉ POR QUE DA ERROR
-    //     referrerPolicy: 'no-referrer'
-    // });
-    // console.log('request =', request);   PARA VER QUE EL REQUEST FUNCIONA
-
-
-
-
-// const callingFetch = (llamada2) => {
-
-// fetch(request)
-//     .then(function(response) {
-//          // console.log('response =', response);
-//         return response.json();
-//     })
-//     .then(function(data) {
-//         console.log('data = ', data);
-//         movies.push(data);
-//         console.log(movies);
-//     })
-//     .catch(function(err) {
-//         console.error(err);
-//     });
-
-
-// permite imprimir
-// console.log(movies);
-     // return movies;
-     // }
-
-
-
-   // for (let i=0; i<=1;i++){
-   //    if (i=0){
-   //      llamada2=6513120;
-   //     }else{llamada2=4701660}
-   //   console.log(callingFetch(llamada1,llamada2,llamada3))
-   //
-   // }
-
-
-
 // ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 
 
    let movies=[];
-   let llamada1="http://www.omdbapi.com/?i=tt";
+   let llamada1="https://www.omdbapi.com/?i=tt";
    let llamada2=3104988;
    let llamada3="&apikey=eb4fa0ba";
    let llamada4="&plot=full";
@@ -97,49 +37,57 @@
    llamando.then(result => {return result.json();})
    .then(result => {
     if (result.Type==="movie"){
-   console.log(result.Type);
-    movies.push(result);
+      movies.push(result);
+        }
+    // ASÍ SE PUEDE ACCEDER A LOS ELEMENTOS DEL ARRAY
 
-    }
+    
+   for (let element in movies) {
+      // console.log(movies[element]);
+      document.getElementById("root").innerHTML += "<p>" + movies[element].Title + "</p>";
+      document.getElementById("root").innerHTML += "<p>" + movies[element].Genre + "</p>";
+      document.getElementById("root").innerHTML += "<p>" + movies[element].Plot + "</p>";
+      console.log(movies[element].Poster);
+    
+        let variable3=movies[element].Poster;
+      document.getElementById("root").innerHTML += `
+      <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+        <div class="card">
+         <img src="${element.Poster}" class="img">
+        </div>
+      </div>`
 
+
+      document.getElementById("root").innerHTML += "<p>" + movies[element].Year + "</p>";
+
+
+    };
    }).catch(err => {
-     // Mostrar error
-     console.log(err);
+         console.log(err);
    });
-
-   console.log(movies);
    llamada2+=1;
-   // return movies;
-   // }
+
    }
 
+   const containerRoot = document.getElementById("root");
 
-   
+ //Mostrando la Data
+const showData = (movies) => {
+  let result = '';
+ movies.forEach(element => {
+     containerRoot.innerHTML += `
+        <div class="card">
+          <div class="box">
+            <div class="img">
+        <img src="${element.Poster}" class="img" alt="Movies"></div>
+        <h5 class="card-title">${element.Title}</h5>
+        <p>${element.Genre}</p>
+        <p>${element.Plot}</p>
+        <p>${element.Year}</p>
+        </div>
+      </div>`
+  });
+  return result;
+}
 
 
-
-
-
-
-
-   // foreach (let property in movies){
-   //
-   // console.log(property);}
-
-
-
-   // let pokemonBox = (name, number, type, image) => {
-   //     let typesFormated = formatTypes (type);
-   //     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-   //     <div class="card w-100 pokemon-box">
-   //     <div  class="card-img-top">
-   //     <img class="img-fluid" src="${image}" alt="${name}">
-   //     </div>
-   //     <div class="card-body">
-   //     <p class="card-text">#${number}</p>
-   //     <p class="card-text">${name}</p>
-   //     <p class="card-text">${typesFormated}</p>
-   //     </div>
-   //     </div>
-   //     </div>`;
-   // }
