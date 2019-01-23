@@ -116,24 +116,24 @@
 
 
 
-   foreach (let property in movies){
+   // foreach (let property in movies){
+   //
+   // console.log(property);}
 
-   console.log(property);}
 
 
-
-   let pokemonBox = (name, number, type, image) => {
-       let typesFormated = formatTypes (type);
-       return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-       <div class="card w-100 pokemon-box">
-       <div  class="card-img-top">
-       <img class="img-fluid" src="${image}" alt="${name}">
-       </div>
-       <div class="card-body">
-       <p class="card-text">#${number}</p>
-       <p class="card-text">${name}</p>
-       <p class="card-text">${typesFormated}</p>
-       </div>
-       </div>
-       </div>`;
-   }
+   // let pokemonBox = (name, number, type, image) => {
+   //     let typesFormated = formatTypes (type);
+   //     return `<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+   //     <div class="card w-100 pokemon-box">
+   //     <div  class="card-img-top">
+   //     <img class="img-fluid" src="${image}" alt="${name}">
+   //     </div>
+   //     <div class="card-body">
+   //     <p class="card-text">#${number}</p>
+   //     <p class="card-text">${name}</p>
+   //     <p class="card-text">${typesFormated}</p>
+   //     </div>
+   //     </div>
+   //     </div>`;
+   // }
