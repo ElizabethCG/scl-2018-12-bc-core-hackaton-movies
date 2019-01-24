@@ -1,4 +1,4 @@
-/* Estilos tarjetas 
+//Estilos tarjetas
 
 .container-fluid {
     display: flex;
@@ -7,7 +7,8 @@
     flex-wrap: wrap;
     align-items: baseline;
   }
-  
+
+
   .card {
     width: 300px;
     height: 300px;
@@ -18,7 +19,7 @@
     text-align: center;
     align-content: flex-start;
   }
-  
+
   .card .box {
     text-align: center;
     padding: 1.25em;
@@ -51,4 +52,4 @@
   }
   .card .box span {
     display: inline-flex;
-  }*/
+  }
