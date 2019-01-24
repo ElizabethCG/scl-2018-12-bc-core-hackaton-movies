@@ -1,4 +1,4 @@
-
+//
 // buscar por (valueYear,valueGenre, year,genre)
 // let category1=genre;
 // let category2=year;
@@ -22,15 +22,45 @@
 //
 // si la suma total igual a largo array, entonces .... meter pelicula en nuevo array
 // devolver array e imprimir en pantalla
-
-
+//
+//
 // if(valueCategory2=keyvalue and value category1=keyvalue){push al array resultado}
 // si una key value está vacia...
 // revisar primero qué contenedores vienen con datos...
 //
 //
+
+
+//var selected_movies = movies.filter(function (movie) {
+//     return movie.Genre = "comedy";
+// });
+
+
+// Using ES6
+// var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
+// const deadBeforeSXX = inventors.filter(inventor => (inventor.passed < 1900));
+
+
+
+// var filter = function (array, callback) {
 //
+//     var filtered_array = [];
 //
+//     array.forEach(function (element, index, array) {
+//         if (callback(element, index, array)) {
+//             filtered_array.push(element);
+//         }
+//     });
+//
+//     return filtered_array;
+//
+// };
+
+
+
+
+//
+
 
 /*
 
@@ -45,3 +75,59 @@ const filterSeason = (dataB, condition) => {
     return filteredSeason;
   };*/
 
+
+// const searchFor = (data, pokeParameter) => {
+//   const finding = data.filter(element => {return element.num.indexOf(pokeParameter) >= 0;});
+//   console.log(typeof finding);
+//   if (finding[0] === undefined){
+//     const finding = data.filter(element => {return element.name.indexOf(pokeParameter) >= 0;});
+//     console.log(typeof finding);
+//     return finding;
+//   }
+//   return finding;
+// }
+
+// ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
+// DESDES AQUÍ LA FUNCIONES REALES (LO ANTERIOR SON EJEMPLOS )
+
+
+//Filtro: si la búsqueda coincide exactamente lo incluye en el array
+//      movies.forEach((position)=> {
+//          let atribute="Language";
+//          let atributeValue="English"
+//          let selected_movies = movies.filter(movie => (movie[atribute]===atributeValue));
+// console.log(selected_movies);
+// return selected_movies
+//      });
+
+
+
+
+
+
+
+// PRETENDO DEJAR SOLO ESTA FUNCION DE FILTRADO
+//Filtro: si contiene una palabra que coincida lo incluye en el array
+     // movies.forEach((position)=> {
+     //   let atribute="Genre";
+     //     let atributeValue="Comedy"
+     //  let selected_movies = movies.filter(movie => ((movie[atribute]).indexOf(atributeValue) > -1));
+     //  console.log(selected_movies);
+     //  return selected_movies
+     // });
+
+
+
+     const callingYears = (movies) => {
+       let arrayYears = [];
+       movies.forEach((element, position)=> {
+          arrayYears.push(movies[position].Year);
+          console.log(arrayYears)
+       });
+       return arrayYears
+}
+
+
+
+
+     window.callingYears = callingYears;
