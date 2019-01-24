@@ -19,8 +19,66 @@
       movies.push(result);
         }
 
-      if(i===repeat){showData(movies);}
 
+
+        /* Función que carga por pantalla la lista de años de forma dinámica */
+
+        let yearsAvailable = window.callingYears(movies);
+        console.log(yearsAvailable);
+
+
+        document.getElementById("selectYearMenu").addEventListener("click", //transformar a una función para poder reutilizarlo desde distintos botones
+          (event) => {
+            event.preventDefault();
+            document.getElementById('selectYear').innerHTML = ''; // limpio el div cada vez que se hace click
+
+            let m = 0;
+            yearsAvailable.forEach((element) => {
+              document.getElementById("selectYear").innerHTML += "<option value=" + m + "  id=selectYear" + m + ">" + element + "</option>";
+              m++;
+            });
+          });
+
+
+
+
+
+
+
+
+
+
+
+
+      if(i===repeat){showData(movies);
+        // let yearsAvailable = callingYears(movies);
+        // console.log(yearsAvailable);
+
+
+
+//Filtro: si la búsqueda coincide exactamente lo incluye en el array
+     movies.forEach((position)=> {
+         let atribute="Language";
+         let atributeValue="English"
+         let selected_movies = movies.filter(movie => (movie[atribute]===atributeValue));
+console.log(selected_movies);
+return selected_movies
+     });
+
+
+// PRETENDO DEJAR SOLO ESTA FUNCION DE FILTRADO (ME PARECE QUE SERVIRÁ PARA TODOS LOS CASOS)
+//Filtro: si contiene una palabra que coincida lo incluye en el array
+     movies.forEach((position)=> {
+       let atribute="Genre";
+         let atributeValue="Comedy"
+      let selected_movies = movies.filter(movie => ((movie[atribute]).indexOf(atributeValue) > -1));
+      console.log(selected_movies);
+      return selected_movies
+     });
+
+}
+
+// });
 
    }).catch(err => {
          console.log(err);
