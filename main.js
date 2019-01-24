@@ -24,12 +24,12 @@
         /* Función que carga por pantalla la lista de años de forma dinámica */
 
         let yearsAvailable = window.callingYears(movies);
-        console.log(yearsAvailable);
+        // console.log(yearsAvailable);
 
-
-        document.getElementById("selectYearMenu").addEventListener("click", //transformar a una función para poder reutilizarlo desde distintos botones
+        document.getElementById("selectYear").addEventListener("click", //transformar a una función para poder reutilizarlo desde distintos botones
           (event) => {
             event.preventDefault();
+            // <option value="0" disabled selected>Año</option>
             document.getElementById('selectYear').innerHTML = ''; // limpio el div cada vez que se hace click
 
             let m = 0;
@@ -39,8 +39,8 @@
             });
           });
 
-
-
+             let selectedYear = document.getElementById("selectYear").value;
+             console.log(selectedYear);
 
 
 

@@ -1,66 +1,3 @@
-//
-// buscar por (valueYear,valueGenre, year,genre)
-// let category1=genre;
-// let category2=year;
-// let valueCategory1=valueYear;
-// let valueCategory2=valueGenre;
-// let counter=0;
-// if(valueCaterory1<>""){counter+=1};
-// if(valueCaterory2<>""){counter+=1};
-//
-// iterar en el array con forEach + counter para las condiciones por cada elemento que ingresa
-// que recorra por cada elemento del array y vea si cada elemento es igual al valueCategory 1,
-//  si es igual, que almacene la posicion del elemento (pelicula con todos sus datos) en el array
-//
-// for each para iterar por cada pelicula...
-// para realizar la comparacion de los atributos(2)
-// si atributo1 asigno array 1
-// valtor atributo 1
-// si para atributo valor =a par de la movie entonces suma1
-// repite ciclo, si par de atributo2 es igual a pelicula, suma1..
-// repetir tantas veces como larga del array -1
-//
-// si la suma total igual a largo array, entonces .... meter pelicula en nuevo array
-// devolver array e imprimir en pantalla
-//
-//
-// if(valueCategory2=keyvalue and value category1=keyvalue){push al array resultado}
-// si una key value está vacia...
-// revisar primero qué contenedores vienen con datos...
-//
-//
-
-
-//var selected_movies = movies.filter(function (movie) {
-//     return movie.Genre = "comedy";
-// });
-
-
-// Using ES6
-// var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
-// const deadBeforeSXX = inventors.filter(inventor => (inventor.passed < 1900));
-
-
-
-// var filter = function (array, callback) {
-//
-//     var filtered_array = [];
-//
-//     array.forEach(function (element, index, array) {
-//         if (callback(element, index, array)) {
-//             filtered_array.push(element);
-//         }
-//     });
-//
-//     return filtered_array;
-//
-// };
-
-
-
-
-//
-
 
 /*
 
@@ -104,8 +41,6 @@ const filterSeason = (dataB, condition) => {
 
 
 
-
-
 // PRETENDO DEJAR SOLO ESTA FUNCION DE FILTRADO
 //Filtro: si contiene una palabra que coincida lo incluye en el array
      // movies.forEach((position)=> {
@@ -120,14 +55,36 @@ const filterSeason = (dataB, condition) => {
 
      const callingYears = (movies) => {
        let arrayYears = [];
+       let arrayOut=[];
        movies.forEach((element, position)=> {
           arrayYears.push(movies[position].Year);
-          console.log(arrayYears)
+
        });
-       return arrayYears
-}
-
-
-
-
+       arrayOut=orderDataForYear(arrayYears)
+       return arrayOut
+    }
      window.callingYears = callingYears;
+
+
+     const orderDataForYear = (arrayYears) => {
+       // console.log(arrayYears);
+       let orderedArray = arrayYears;
+       orderedArray.sort(function (a, b) {
+         if (a < b) {
+           return -1;
+           // console.log(a);
+           // console.log(b);
+         }
+         else if (a > b) {
+            return 1;
+         }else{
+         // a must be equal to b
+        //  return 0;
+        //
+        if(a = b){orderedArray.pop() === b}}
+
+       });
+
+       console.log(orderedArray);
+       return orderedArray; //retorno el arreglo de objetos para luego tomarlo desde el archivo main.js y hacer la visualización de datos con el DOM
+     }
