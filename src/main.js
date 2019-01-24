@@ -41,7 +41,8 @@
         }
     // ASÍ SE PUEDE ACCEDER A LOS ELEMENTOS DEL ARRAY
 
-    for (let element in movies) {
+    
+   for (let element in movies) {
       // console.log(movies[element]);
       document.getElementById("root").innerHTML += "<p>" + movies[element].Title + "</p>";
       document.getElementById("root").innerHTML += "<p>" + movies[element].Genre + "</p>";
@@ -49,7 +50,12 @@
       console.log(movies[element].Poster);
     
         let variable3=movies[element].Poster;
-      document.getElementById("root").innerHTML += "<img src=" +variable3+"alt=Imagen pelicula>";
+      document.getElementById("root").innerHTML += `
+      <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+        <div class="card">
+         <img src="${element.Poster}" class="img">
+        </div>
+      </div>`
 
 
       document.getElementById("root").innerHTML += "<p>" + movies[element].Year + "</p>";
@@ -62,3 +68,26 @@
    llamada2+=1;
 
    }
+
+   const containerRoot = document.getElementById("root");
+
+ //Mostrando la Data
+const showData = (movies) => {
+  let result = '';
+ movies.forEach(element => {
+     containerRoot.innerHTML += `
+        <div class="card">
+          <div class="box">
+            <div class="img">
+        <img src="${element.Poster}" class="img" alt="Movies"></div>
+        <h5 class="card-title">${element.Title}</h5>
+        <p>${element.Genre}</p>
+        <p>${element.Plot}</p>
+        <p>${element.Year}</p>
+        </div>
+      </div>`
+  });
+  return result;
+}
+
+
