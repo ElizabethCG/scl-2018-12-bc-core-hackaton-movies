@@ -70,3 +70,48 @@
 //   }
 //   return finding;
 // }
+
+// ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
+// DESDES AQUÍ LA FUNCIONES REALES (LO ANTERIOR SON EJEMPLOS )
+
+
+//Filtro: si la búsqueda coincide exactamente lo incluye en el array
+//      movies.forEach((position)=> {
+//          let atribute="Language";
+//          let atributeValue="English"
+//          let selected_movies = movies.filter(movie => (movie[atribute]===atributeValue));
+// console.log(selected_movies);
+// return selected_movies
+//      });
+
+
+
+
+
+
+
+// PRETENDO DEJAR SOLO ESTA FUNCION DE FILTRADO
+//Filtro: si contiene una palabra que coincida lo incluye en el array
+     // movies.forEach((position)=> {
+     //   let atribute="Genre";
+     //     let atributeValue="Comedy"
+     //  let selected_movies = movies.filter(movie => ((movie[atribute]).indexOf(atributeValue) > -1));
+     //  console.log(selected_movies);
+     //  return selected_movies
+     // });
+
+
+
+     const callingYears = (movies) => {
+       let arrayYears = [];
+       movies.forEach((element, position)=> {
+          arrayYears.push(movies[position].Year);
+          console.log(arrayYears)
+       });
+       return arrayYears
+}
+
+
+
+
+     window.callingYears = callingYears;
