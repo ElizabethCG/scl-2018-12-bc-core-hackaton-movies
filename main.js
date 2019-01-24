@@ -19,8 +19,27 @@
       movies.push(result);
         }
 
-      if(i===repeat){showData(movies);}
+      if(i===repeat){showData(movies);
 
+
+
+// Filtra por año
+  // movie.Year y valor tendrán que ser variables
+     movies.forEach((position)=> {
+         let selected_movies = movies.filter(movie => (movie.Year==="2018"));
+console.log(selected_movies);
+     });
+
+//Filtra por categoría drama
+     movies.forEach((position)=> {
+      let selected_movies = movies.filter(movie => ((movie.Genre).indexOf("Drama") > -1));
+      // movie.Year y valor deben ser variables
+  console.log(selected_movies);
+     });
+
+}
+
+// });
 
    }).catch(err => {
          console.log(err);
