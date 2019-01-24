@@ -8,7 +8,7 @@
    let calling4="&plot=full";
    // let calling5="&genre=comedy";
 
-   let repeat = 100
+   let repeat = 200
    for (let i=0;i<=repeat;i++){
 
    calling = fetch(calling1+calling2+calling3+calling4);
@@ -101,8 +101,8 @@ return selected_movies
             containerRoot.innerHTML += `
         <div class="card">
           <div class="box">
-            <div class="img">
-        <img src="${movies[position].Poster}" class="img" alt="Movies"></div>
+          <div class="img">
+          <a title="Movies" href="https://www.youtube.com/user/trailersyestrenos"><img src="${movies[position].Poster}" class="img" alt="Movies"></div></a>
         <h5 class="card-title">${movies[position].Title}</h5>
         <p>${movies[position].Genre}</p>
         <p>${movies[position].Plot}</p>

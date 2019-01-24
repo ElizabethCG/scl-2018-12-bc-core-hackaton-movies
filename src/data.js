@@ -60,6 +60,22 @@
 
 
 //
+
+
+/*
+
+const filterSeason = (dataB, condition) => {
+    //filter es un ciclo iterativo como el for, forech, reviw
+   if (condition == 0){
+       return dataB;
+   }
+    const filteredSeason = dataB.filter(element => {
+        return element.seasonNum == condition
+    })
+    return filteredSeason;
+  };*/
+
+
 // const searchFor = (data, pokeParameter) => {
 //   const finding = data.filter(element => {return element.num.indexOf(pokeParameter) >= 0;});
 //   console.log(typeof finding);
