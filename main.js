@@ -43,8 +43,8 @@
             containerRoot.innerHTML += `
         <div class="card">
           <div class="box">
-            <div class="img">
-        <img src="${movies[position].Poster}" class="img" alt="Movies"></div>
+          <div class="img">
+          <a title="Movies" href="https://www.youtube.com/user/trailersyestrenos"><img src="${movies[position].Poster}" class="img" alt="Movies"></div></a>
         <h5 class="card-title">${movies[position].Title}</h5>
         <p>${movies[position].Genre}</p>
         <p>${movies[position].Plot}</p>
