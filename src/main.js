@@ -8,7 +8,7 @@
    let calling4="&plot=full";
    // let calling5="&genre=comedy";
 
-   let repeat = 100
+   let repeat = 200
    for (let i=0;i<=repeat;i++){
 
    calling = fetch(calling1+calling2+calling3+calling4);

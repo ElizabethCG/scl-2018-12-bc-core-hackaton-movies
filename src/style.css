@@ -1,4 +1,4 @@
-//Estilos tarjetas
+/*Estilos tarjetas*/
 
 .container-fluid {
     display: flex;
@@ -10,7 +10,7 @@
 
 
   .card {
-    width: 300px;
+    width: 700px;
     height: 300px;
     margin: 1em;
     background:#fff;
