@@ -1,4 +1,4 @@
-
+//
 // buscar por (valueYear,valueGenre, year,genre)
 // let category1=genre;
 // let category2=year;
@@ -22,14 +22,43 @@
 //
 // si la suma total igual a largo array, entonces .... meter pelicula en nuevo array
 // devolver array e imprimir en pantalla
-
-
+//
+//
 // if(valueCategory2=keyvalue and value category1=keyvalue){push al array resultado}
 // si una key value está vacia...
 // revisar primero qué contenedores vienen con datos...
 //
 //
+
+
+//var selected_movies = movies.filter(function (movie) {
+//     return movie.Genre = "comedy";
+// });
+
+
+// Using ES6
+// var difficult_tasks = tasks.filter((task) => task.duration >= 120 );
+// const deadBeforeSXX = inventors.filter(inventor => (inventor.passed < 1900));
+
+
+
+// var filter = function (array, callback) {
 //
+//     var filtered_array = [];
+//
+//     array.forEach(function (element, index, array) {
+//         if (callback(element, index, array)) {
+//             filtered_array.push(element);
+//         }
+//     });
+//
+//     return filtered_array;
+//
+// };
+
+
+
+
 //
 // const searchFor = (data, pokeParameter) => {
 //   const finding = data.filter(element => {return element.num.indexOf(pokeParameter) >= 0;});
