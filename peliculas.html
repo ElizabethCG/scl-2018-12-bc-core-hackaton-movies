@@ -15,7 +15,9 @@
 </head>
 <body>
   <header>
-    <h1>To CatchUp <img src="../src/img/images.png"></h1>
+    <h2>To CatchUp on the Movies<img class="img-celu" src="../src/img/images.png"></h2>
+    <!--<p1 class="paragraf">Busca rapidamente información de tus películas favoritas</p1>-->
+    
   </header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -68,30 +70,18 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input id="buscador"  type="search" placeholder="Buscar por director, actor..." aria-label="Search">
+        <input id="buscador" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
-
   <section>
-      <article class="col s12 m4 l12">
-          <h3 class="animated bounceInRight">GÉNEROS</h3>
-        </article>
-        <section>
-          <button type="button" class="btn btn-outline-warning">Acción</button>
-          <button type="button" class="btn btn-outline-success">Comedia</button>
-          <button type="button" class="btn btn-outline-primary">Documental</button>
-          <button type="button" class="btn btn-outline-secondary">Drama</button>
-          <button type="button" class="btn btn-outline-dark">Horror</button>
-          <button type="button" class="btn btn-outline-info">Infantil</button>
-          <button type="button" class="btn btn-outline-danger">Romance</button>
-          <!--<button type="button" class="btn btn-outline-light">Short</button>-->
-        </section>
+      <div id="root" class="container-fluid"></div>
+    </section>
 
-  <section>
-    <div id="root" class="container-fluid"></div>
-  </section>
+  <!--<section class="container-fluid">
+    <div id="root"></div>
+  </section>-->
 
   <footer>
     <div class="container" style="width: 100%">
@@ -112,3 +102,6 @@
   <script src="main.js"></script>
 </body>
 </html>
+
+
+
