@@ -96,7 +96,7 @@ const containerRoot = document.getElementById("root");
         <div class="card">
           <div class="box">
           <div class="img">
-          <a title="Movies" href="https://www.youtube.com/user/trailersyestrenos"><img src="${movies[position].Poster}" class="img" alt="Movies"></div></a>
+          <a title="Movies" href="https://www.youtube.com/watch?v=diTyTMIRz6A"><img src="${movies[position].Poster}" class="img" alt="Movies"></div></a>
         <h5 class="card-title">${movies[position].Title}</h5>
         <p>Género: ${movies[position].Genre}</p>
         <p>Sinópsis: ${movies[position].Plot}</p>
