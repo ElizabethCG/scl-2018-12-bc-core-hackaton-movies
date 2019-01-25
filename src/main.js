@@ -1,6 +1,4 @@
 
-
-
    let movies=[];
    let calling1="https://www.omdbapi.com/?i=tt";
    let calling2=3104988;
@@ -8,7 +6,7 @@
    let calling4="&plot=full";
    // let calling5="&genre=comedy";
 
-   let repeat = 200
+   let repeat = 500
    for (let i=0;i<=repeat;i++){
 
    calling = fetch(calling1+calling2+calling3+calling4);
@@ -23,7 +21,7 @@
 
         /* Función que carga por pantalla la lista de años de forma dinámica */
 
-        let yearsAvailable = window.callingYears(movies);
+ /*       let yearsAvailable = window.callingYears(movies);
         // console.log(yearsAvailable);
 
         document.getElementById("selectYear").addEventListener("click", //transformar a una función para poder reutilizarlo desde distintos botones
@@ -42,12 +40,7 @@
              let selectedYear = document.getElementById("selectYear").value;
              console.log(selectedYear);
 
-
-
-
-
-
-
+*/
 
 
       if(i===repeat){showData(movies);
@@ -55,7 +48,7 @@
         // console.log(yearsAvailable);
 
 
-
+/*
 //Filtro: si la búsqueda coincide exactamente lo incluye en el array
      movies.forEach((position)=> {
          let atribute="Language";
@@ -74,11 +67,11 @@ return selected_movies
       let selected_movies = movies.filter(movie => ((movie[atribute]).indexOf(atributeValue) > -1));
       console.log(selected_movies);
       return selected_movies
-     });
+     });*/
 
 }
 
-// });
+//});
 
    }).catch(err => {
          console.log(err);
@@ -99,14 +92,16 @@ return selected_movies
  // console.log(position);
  // console.log(element);
             containerRoot.innerHTML += `
+           
         <div class="card">
           <div class="box">
           <div class="img">
           <a title="Movies" href="https://www.youtube.com/user/trailersyestrenos"><img src="${movies[position].Poster}" class="img" alt="Movies"></div></a>
         <h5 class="card-title">${movies[position].Title}</h5>
-        <p>${movies[position].Genre}</p>
-        <p>${movies[position].Plot}</p>
-        <p>${movies[position].Year}</p>
+        <p>Género: ${movies[position].Genre}</p>
+        <p>Sinópsis: ${movies[position].Plot}</p>
+        <p>Año de Estreno: ${movies[position].Year}</p>
+
         </div>
       </div>`
   });

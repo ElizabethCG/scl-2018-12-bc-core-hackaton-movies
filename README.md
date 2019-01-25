@@ -151,7 +151,9 @@ Una vez creado el diseño se realiza el primer testeo.
 
 #### Prototipo de baja fidelidad
 
-(Agregar PDF con scanner de las imágenes)
+![](sc1.jpeg)
+![](sc2.jpeg)
+
 
 #### Testeos de usabilidad
 
@@ -171,7 +173,14 @@ Entonces, realizamos mejoras como: Agregar link(url) en cada tarjeta.
 
 Y continuamos construyendo la página web con una identidad gráfica, diseñada a partir de los resultados de la encuesta realizada y el primero testeo de usabilidad del prototipo de baja fidelidad, para ser utilizada en la interfaz.
 
-[Figma](https://www.figma.com/)
+[Figma]
+https://www.figma.com/file/BFs32saK9EtpmhWj53s8ZS2e/Pelis2
+
+![](segunda.png)
+Primer formato de figma antes de testear.
+
+![](primera.png)
+Figma definitivo despúes del testear.
 
 ## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
@@ -195,7 +204,9 @@ Pruebas unitarias para las funciones encargadas de _procesar_ y _filtrar_ la dat
 
 ## Planificación
 
-(foto)
+![](i1.png)
+![](i2.png)
+![](i3.png)
 
 ## Contenido de referencia
 
