@@ -15,7 +15,6 @@
 * [Consideraciones técnicas](#consideraciones-técnicas)
 * [Planificación](#planificación)
 * [Contenido de referencia](#contenido-de-referencia)
-* [Resultado final](#resultado-final)
 
 ***
 
@@ -36,21 +35,21 @@ https://elizabethcg.github.io/scl-2018-12-bc-core-hackaton-movies/
 
 ## Historias de usuarios
 
-###Usuario 1
+### Usuario 1
 Como espectador que vive lejos
 Compartir la experiencia de ver una película en conjunto con otro/s.
 Unir tiempo-espacio con seres queridos
 Crear un ícono y mensaje tipo invitación con un texto + el horario de la película y los complementos considerados (chocolates, etc.)
 
 
-###Usuario 2
+### Usuario 2
 Como posible espectador
 Conocer más información acerca de una película específica.
 Continuar el hilo de conversación de mis amigos que ayer vieron una película y yo no.
 Agregar un input de búsqueda para filtar por nombre.
 
 
-###Usuario 3
+### Usuario 3
 Como espectador.
 Quiero ver el trailer de las películas.
 Para tener una idea anticipada de si me gusta la película.
@@ -59,7 +58,7 @@ Evaluar si está disponible en la data.
 Ver si es posible anexarlo…
 
 
-###Usuario 4
+### Usuario 4
 Como Actor.
 Quiero participar en un grupo de teatro.
 Conocer directores y actores de cine.
@@ -67,7 +66,7 @@ Conocer directores y actores de cine.
 Agregar un input de búsqueda para filtar por nombre.
 
 
-###Usuario 5
+### Usuario 5
 Como espectador
 Quiero filtrar las películas según clasificaciones de mi mayor interés: por género, por actor, por director, por puntuación.
 Para revisar las películas de mi especial interés y agilizar y simplificar mi búsqueda.
@@ -78,7 +77,7 @@ Desplegar la información.
 Acoplar con el resto de funcionalidades. (requerimiento 5)
 
 
-###Usuario 6
+### Usuario 6
 Como espectador
 Quiero ver la películas con mejor puntuación.
 Quiero tomar una decisión segura y no perder tiempo en una película aburrida.
@@ -87,7 +86,7 @@ Contar con la visualización de la evaluación (estrellas).
 Realizar un cálculo con resultado de porcentaje de críticas positivas v/s negativas.
 
 
-###Usuario 7
+### Usuario 7
 Como vendedor de merchandising.
 Quiero obtener información de las películas mejor evaluadas.
 Para determinar los productos que estarán a la venta.
@@ -96,7 +95,7 @@ Contar con la visualización de de evaluación (estrellas).
 Realizar un cálculo con resultado de porcentaje de críticas positivas v/s negativas.
 
 
-###Usuario 8
+### Usuario 8
 Como novio
 Quiero seleccionar una película romántica con mi novia.
 Para compartir un momento de complicidad.
@@ -110,7 +109,7 @@ Botón/ícono de comida sugerida.
 Botón/ícono de souveniers sugeridos…
 
 
-###Usuario 9
+### Usuario 9
 Como espectador.
 Quiero tener sugerencias de experiencias de películas, comida y temas.
 Para preparme y generar un momento completo con mis amigos.
@@ -119,7 +118,7 @@ Anexar al catálogo completo.
 Evaluar si es posible llegar a esta implementación.
 
 
-###Usuario 10
+### Usuario 10
 Como espectador.
 Quiero seleccionar una película desde el catálogo.
 Para ver un resumen de la trama.
@@ -177,9 +176,11 @@ Y continuamos construyendo la página web con una identidad gráfica, diseñada 
 https://www.figma.com/file/BFs32saK9EtpmhWj53s8ZS2e/Pelis2
 
 ![](segunda.png)
+
 Primer formato de figma antes de testear.
 
 ![](primera.png)
+
 Figma definitivo despúes del testear.
 
 ## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
@@ -191,6 +192,7 @@ Figma definitivo despúes del testear.
    tablets y desktops.
 
 ![](peli.png)
+![](peli2.png)
 
 ## Consideraciones técnicas
 
@@ -213,7 +215,5 @@ Pruebas unitarias para las funciones encargadas de _procesar_ y _filtrar_ la dat
 ## Contenido de referencia
 
 (http://www.imdb.com/)
-
-## Resultado final
 
 
