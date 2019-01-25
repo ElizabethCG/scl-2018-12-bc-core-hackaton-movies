@@ -3,7 +3,7 @@ body{
 
 }
 
-h1{
+h2{
     color: #ffff;
     font-family: 'Lato', sans-serif;
 }
@@ -18,7 +18,7 @@ header{
     font-family: 'Lato', sans-serif;
     padding: 4% 0 0 0;
     background-repeat: no-repeat;
-    width: 1800px;
+    width: 1700px;
     height: 250px;
 }
 
