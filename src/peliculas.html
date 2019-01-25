@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MOVIES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>To CatchUp on the Movies<img class="img-celu" src="../src/img/images.png"></h2>
+    <!--<p1 class="paragraf">Busca rapidamente información de tus películas favoritas</p1>-->
+
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="peliculas.html">Películas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Género
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Acción.html">Acción</a>
+              <a class="dropdown-item" href="Comedia.html">Comedia</a>
+              <a class="dropdown-item" href="Documental.html">Documental</a>
+              <a class="dropdown-item" href="Drama.html">Drama</a>
+              <a class="dropdown-item" href="Horror.html">Horror</a>
+              <a class="dropdown-item" href="Infantil.html">Infantil</a>
+              <a class="dropdown-item" href="Romance.html">Romance</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Año
+          </a>
+
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="select-year" >
+
+            <a class="dropdown-item" option="2019">2019</a>
+            <a class="dropdown-item" option="2018">2018</a>
+            <a class="dropdown-item" option="2017">2017</a>
+            <a class="dropdown-item" option="2016">2016</a>
+            <a class="dropdown-item" option="2015">2015</a>
+            <a class="dropdown-item" option="2014">2014</a>
+            <a class="dropdown-item" option="2013">2013</a>
+            <a class="dropdown-item" option="2012">2012</a>
+            <a class="dropdown-item" option="2011">2011</a>
+            <a class="dropdown-item" option="2010">2010</a>
+<!--
+            <select name="selectYear" id="selectYear">
+            <option value="0" disabled selected>Año</option>
+            </select>-->
+
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="buscador" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <section>
+      <div id="root" class="container-fluid"></div>
+    </section>
+
+  <!--<section class="container-fluid">
+    <div id="root"></div>
+  </section>-->
+
+  <footer>
+    <div class="container" style="width: 100%">
+      © 2019
+      <a class="grey-text text-lighten-4" href="http://www.lashorasperdidas.com/">Datos freaks</a>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+  <!-- <script src="./data/omdb/omdb.json"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
