@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>+Info-películas</title>
+  <title>MOVIES</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,11 +15,16 @@
 </head>
 <body>
   <header>
-    <h1>Título</h1>
+    <h1>To CatchUp<img class="img-celu" src="../src/img/images.png"></h1>
+    <!--<p1 class="paragraf">Busca rapidamente información de tus películas favoritas</p1>-->
+    
   </header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
         <li class="nav-item">
           <a class="nav-link" href="peliculas.html">Películas</a>
         </li>
@@ -39,40 +44,38 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-          <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Año
           </a>
 
 
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropDown_year" > -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="select-year" > 
 
-            <!-- <a class="dropdown-item" href="2019.html">2019</a>
-            <a class="dropdown-item" href="2018.html">2018</a>
-            <a class="dropdown-item" href="2017.html">2017</a>
-            <a class="dropdown-item" href="2016.html">2016</a>
-            <a class="dropdown-item" href="2015.html">2015</a>
-            <a class="dropdown-item" href="2014.html">2014</a>
-            <a class="dropdown-item" href="2013.html">2013</a>
-            <a class="dropdown-item" href="2012.html">2012</a>
-            <a class="dropdown-item" href="2011.html">2011</a>
-            <a class="dropdown-item" href="2010.html">2010</a> -->
-
-
+            <a class="dropdown-item" option="2019">2019</a>
+            <a class="dropdown-item" option="2018">2018</a>
+            <a class="dropdown-item" option="2017">2017</a>
+            <a class="dropdown-item" option="2016">2016</a>
+            <a class="dropdown-item" option="2015">2015</a>
+            <a class="dropdown-item" option="2014">2014</a>
+            <a class="dropdown-item" option="2013">2013</a>
+            <a class="dropdown-item" option="2012">2012</a>
+            <a class="dropdown-item" option="2011">2011</a>
+            <a class="dropdown-item" option="2010">2010</a> 
+<!--
             <select name="selectYear" id="selectYear">
             <option value="0" disabled selected>Año</option>
-            </select>
+            </select>-->
 
           </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
+        <input id="buscador" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
   <section class = "container">
-    <!--<section class = "container-fluid">-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -102,9 +105,9 @@
     </div>
   </section>
 
-  <section>
+  <!--<section class="container-fluid">
     <div id="root"></div>
-  </section>
+  </section>-->
 
   <footer>
     <div class="container" style="width: 100%">
