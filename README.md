@@ -1,7 +1,7 @@
 # "Hackathon" de final de Common Core, películas
 
 
-# Ñamp
+# To CatchUp
 
 ## Índice
 
@@ -189,6 +189,8 @@ Figma definitivo despúes del testear.
 3. Calcula estadísticas de las calificaciones otorgadas por los usuarios.
 4. Se puede visualizar sin problemas desde distintos tamaños de pantallas: móviles,
    tablets y desktops.
+
+![](peli.png)
 
 ## Consideraciones técnicas
 
