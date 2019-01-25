@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>+Info-películas</title>
+  <title>MOVIES</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,53 +15,78 @@
 </head>
 <body>
   <header>
-    <h1>Título</h1>
+    <h2>To CatchUp on the Movies<img class="img-celu" src="../src/img/images.png"></h2>
+    <!--<p1 class="paragraf">Busca rapidamente información de tus películas favoritas</p1>-->
+    
   </header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
         <li class="nav-item">
           <a class="nav-link" href="peliculas.html">Películas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="generos.html">Género</a>
+          <a class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Género
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Acción.html">Acción</a>
+              <a class="dropdown-item" href="Comedia.html">Comedia</a>
+              <a class="dropdown-item" href="Documental.html">Documental</a>
+              <a class="dropdown-item" href="Drama.html">Drama</a>
+              <a class="dropdown-item" href="Horror.html">Horror</a>
+              <a class="dropdown-item" href="Infantil.html">Infantil</a>
+              <a class="dropdown-item" href="Romance.html">Romance</a>
+            </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Año
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!-- <a class="dropdown-item" href="2000.html">2000</a>
-            <a class="dropdown-item" href="1900.html">1900</a> -->
-            <select name="selectYear" id="selectYear">
 
-            </select>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="select-year" > 
+
+            <a class="dropdown-item" option="2019">2019</a>
+            <a class="dropdown-item" option="2018">2018</a>
+            <a class="dropdown-item" option="2017">2017</a>
+            <a class="dropdown-item" option="2016">2016</a>
+            <a class="dropdown-item" option="2015">2015</a>
+            <a class="dropdown-item" option="2014">2014</a>
+            <a class="dropdown-item" option="2013">2013</a>
+            <a class="dropdown-item" option="2012">2012</a>
+            <a class="dropdown-item" option="2011">2011</a>
+            <a class="dropdown-item" option="2010">2010</a> 
+<!--
+            <select name="selectYear" id="selectYear">
+            <option value="0" disabled selected>Año</option>
+            </select>-->
 
           </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
+        <input id="buscador" type="search" placeholder="Buscar por director, actor..." aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
-
-  <!--Contenedor con la info de la data-->
-  <article class="col s12 m4 l12">
-    <h2 class="animated bounceInRight">PELÍCULAS</h2>
-  </article>
   <section>
+      <div id="root" class="container-fluid"></div>
+    </section>
+
+  <!--<section class="container-fluid">
     <div id="root"></div>
-  </section>
+  </section>-->
 
   <footer>
     <div class="container" style="width: 100%">
       © 2019
-      <a class="grey-text text-lighten-4" href="https://www.imdb.com/">IMDb-Movies, TV and Celebrities-IMDb</a>
+      <a class="grey-text text-lighten-4" href="http://www.lashorasperdidas.com/">Datos freaks</a>
     </div>
   </footer>
 
@@ -77,3 +102,6 @@
   <script src="main.js"></script>
 </body>
 </html>
+
+
+

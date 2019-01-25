@@ -52,7 +52,6 @@ const filterSeason = (dataB, condition) => {
      // });
 
 
-
      const callingYears = (movies) => {
        let arrayYears = [];
        let arrayOut=[];
